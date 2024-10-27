@@ -28,7 +28,7 @@
             if (password1 === password2) {
                 alert("Password sesuai");
             } else {
-                alert("Password tidak sama");
+                alert("Password tidak sesuai");
             }
         }
     </script>
@@ -39,11 +39,11 @@
     <table>
         <tr>
             <td>Nama Lengkap:</td>
-            <td><input type="text" name="nama lengkap" required></td>
+            <td><input type="text" name="namalengkap" required></td>
         </tr>
         <tr>
             <td>Username</td>
-            <td><input type="text" name="username"></td>
+            <td><input type="text" name="username" required></td>
         </tr>
         <tr>
             <td>Password:</td>
@@ -51,10 +51,10 @@
         </tr>
         <tr>
             <td>Konfirmasi Password</td>
-            <td><input type="password" id="password2" name="password"></td>
+            <td><input type="password" id="password2" name="password" required></td>
         </tr>
         <tr>
-            <td style="background-color: darkcyan;" colspan="2", align="center">
+            <td style="background-color: darkcyan; text-align:center;" colspan="2">
                  <input type="submit" onclick="checkPasswords()" value="Register"></td>
         </tr>
     </table>
