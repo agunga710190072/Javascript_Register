@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <style>
+        input 
+        {
+            padding: 10px;
+        }
+        table 
+        {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        td , td
+        {
+            font-size: 24px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+      <script>
+        function checkPasswords() {
+            const password1 = document.getElementById('password1').value;
+            const password2 = document.getElementById('password2').value;
+            if (password1 === password2) {
+                alert("Password sesuai");
+            } else {
+                alert("Password tidak sama");
+            }
+        }
+    </script>
+</head>
+<body>
+<form action="#" method="post" onsubmit="return false">
+<h1 style="text-align: center;">Halaman Register</h1>
+    <table>
+        <tr>
+            <td>Nama Lengkap:</td>
+            <td><input type="text" name="nama lengkap" required></td>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td><input type="text" name="username"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" id="password1" name="password" required></td>
+        </tr>
+        <tr>
+            <td>Konfirmasi Password</td>
+            <td><input type="password" id="password2" name="password"></td>
+        </tr>
+        <tr>
+            <td style="background-color: darkcyan;" colspan="2", align="center">
+                 <input type="submit" onclick="checkPasswords()" value="Register"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
